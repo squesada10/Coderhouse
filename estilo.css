@@ -4,22 +4,47 @@
 }
 ::selection { background:rgba(219, 157, 116, 0.836); color:#fff; }
 
+.contenedorPadre{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:
+        "header menu menu menu"
+        "fotoIndex fotoIndex fotoIndex fotoIndex"
+        "seccionNueva seccionNueva seccionNueva fotoIndex2"
+        "footer footer footer footer"
+    ;
+}
+@media screen and (max-width: 320px){
+    .contenedorPadre{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:
+        "header menu menu menu"
+        "fotoIndex fotoIndex fotoIndex fotoIndex"
+        "seccionNueva seccionNueva seccionNueva seccionNueva"
+        "fotoIndex2 fotoIndex2 fotoIndex2 fotoIndex2"
+        "footer footer footer footer";
+    }
+}
 .logo img{
     border-radius: 100%;
     width: 90px;
     padding: 10px;
     display: inline-block;  
-    margin: 10px;    
+    margin: 10px;
+    grid-area: header;    
 }
 .header{
     background: linear-gradient(90deg, rgba(215,179,60,1) 0%, rgba(0,0,0,1) 0%, rgba(50,32,9,1) 23%, rgba(112,71,21,1) 60%, rgba(179,113,33,1) 100%, rgba(221,190,64,1) 100%);
-    height: 140px;
+    height: 120px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
+    grid-area: header;
 }
 .menu{
     flex-direction: row;
@@ -27,6 +52,7 @@
     justify-content: space-around;
     margin: 30px;
     padding: 30px;
+    grid-area: menu;
 }
 .menu li{
     margin: 0px 10px;
@@ -38,39 +64,45 @@ ul li{
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     text-decoration: none;
-    padding: 5px 10px;
-    border: 2px double #949494;
+    padding: 0px 30px;
+    border: 1px hidden;
     border-radius: 20px;
 }
 ul li:hover{
-    background-color: #d7b33c;
+    background: linear-gradient(90deg, rgba(215,179,60,1) 0%, rgba(0,0,0,1) 0%, rgba(50,32,9,1) 23%, rgba(112,71,21,1) 60%, rgba(179,113,33,1) 100%, rgba(221,190,64,1) 100%);
 }
 .fotoIndex{
     margin-top: 5px;
     width: 100%;
+    grid-area: fotoIndex;
 }
 .fotoIndex img{
     border-radius: 2%;
+    grid-area: fotoIndex;
 }
 .seccionNueva {
     display: flex;
     justify-content: left;
     align-items: center;
     margin: 80px;
+    grid-area: seccionNueva;
 }
 .seccionNueva div {
     flex-direction: row;
+    grid-area: seccionNueva;
 }
 .seccionNueva  p{
     padding: 0px 50px;
     margin: 10px;
     text-align: justify;
     color: white;
+    grid-area: seccionNueva;
 }
 .fotoIndex2 img{
     height: 70%;
     width: 90%;
     border-radius: 50px;
+    grid-area: fotoIndex2;
 }
 body{
     padding-top: 200px;
@@ -146,6 +178,7 @@ a{
     text-align: justify;
     letter-spacing: 1px;
     word-spacing: 1px;
+    grid-area: texto;
 }
 .contNosotros{
     display: grid;
@@ -162,6 +195,7 @@ a{
 }
 .fotoEquipo{
     border-radius: 15px;
+    grid-area: equipo;
 }
 
 @media screen and (max-width: 768px){
@@ -205,6 +239,7 @@ footer{
     font-family: 'Raleway', sans-serif;
     margin: 5px;
     padding: 10px; 
+    grid-area: footer;
 }
 .copyright{
     color: white;
