@@ -1,0 +1,242 @@
+* {
+  padding: 0%;
+  margin: 0%; }
+
+::selection {
+  background: rgba(0, 0, 0, 0.836);
+  color: #fff; }
+
+.contenedorPadre {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header menu menu menu" "fotoIndex fotoIndex fotoIndex fotoIndex" "seccionNueva seccionNueva seccionNueva fotoIndex2" "footer footer footer footer"; }
+
+@media screen and (max-width: 320px) {
+  .contenedorPadre {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header header header" "fotoIndex fotoIndex fotoIndex fotoIndex" "seccionNueva seccionNueva seccionNueva seccionNueva" "fotoIndex2 fotoIndex2 fotoIndex2 fotoIndex2" "footer footer footer footer"; } }
+
+.logo img {
+  border-radius: 100%;
+  width: 90px;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+  grid-area: header; }
+
+.header {
+  background: linear-gradient(90deg, #d7b33c 0%, black 0%, #322009 23%, #704715 60%, #b37121 100%, #ddbe40 100%);
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  grid-area: header; }
+
+.menu {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 30px;
+  padding: 30px;
+  grid-area: menu; }
+
+.menu li {
+  margin: 0px 10px; }
+
+ul li {
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  padding: 0px 30px;
+  border: 1px hidden;
+  border-radius: 20px; }
+
+ul li:hover {
+  background: linear-gradient(90deg, #d7b33c 0%, black 0%, #322009 23%, #704715 60%, #b37121 100%, #ddbe40 100%); }
+
+.fotoIndex {
+  margin-top: 5px;
+  width: 100%;
+  grid-area: fotoIndex; }
+
+.fotoIndex img {
+  border-radius: 2%;
+  grid-area: fotoIndex; }
+
+.seccionNueva {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 80px;
+  grid-area: seccionNueva; }
+
+.seccionNueva div {
+  flex-direction: row;
+  grid-area: seccionNueva; }
+
+.seccionNueva p {
+  padding: 0px 50px;
+  margin: 10px;
+  text-align: justify;
+  color: white;
+  grid-area: seccionNueva; }
+
+.fotoIndex2 img {
+  height: 70%;
+  width: 90%;
+  border-radius: 50px;
+  grid-area: fotoIndex2; }
+
+body {
+  padding-top: 200px;
+  background: #d7b33c;
+  background: linear-gradient(90deg, #d7b33c 0%, black 0%, #322009 23%, #704715 60%, #b37121 100%, #ddbe40 100%);
+  text-align: center;
+  font-family: 'Raleway', sans-serif; }
+
+h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif; }
+
+h2 {
+  color: #faf398;
+  font-family: monospace;
+  font-size: 40px;
+  text-decoration: underline;
+  margin: 20px;
+  padding: 20px; }
+
+h3 {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px; }
+
+.video {
+  margin: 80px;
+  padding-bottom: 50px; }
+
+table {
+  color: white;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 5px solid #b47f1cd8;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  list-style: none;
+  padding: 20px; }
+
+th {
+  padding: 0px 5px;
+  text-align: center; }
+
+td {
+  padding: 10px; }
+
+p {
+  color: white; }
+
+form {
+  color: white;
+  font-family: 'Raleway', sans-serif; }
+
+.tipoDeVenta {
+  color: white;
+  font-family: 'Raleway', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif; }
+
+.textoNosotros {
+  background-image: linear-gradient to bottom, rgba(221, 158, 23, 0.699), rgba(1, 20, 0, 0);
+  border: 5px solid #b47f1cd8;
+  border-radius: 10px;
+  color: white;
+  margin: 10px 10px 5px 10px;
+  padding: 30px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  grid-area: texto; }
+
+.contNosotros {
+  display: grid;
+  grid-template-columns: repeat 3, 1fr;
+  grid-template-rows: repeat 2, 1fr;
+  grid-template-areas: "equipo texto" "equipo texto";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 70px; }
+
+.fotoEquipo {
+  border-radius: 15px;
+  grid-area: equipo; }
+
+@media screen and (max-width: 768px) {
+  .contNosotros {
+    grid-template-areas: "equipo" "texto"; } }
+
+.seccionTienda {
+  margin: 50px;
+  padding: 20px;
+  padding-bottom: 50px; }
+
+.fotosOrden {
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+.fotosOrden img {
+  width: 320px;
+  margin: 10px;
+  border-radius: 10px; }
+
+.fotitotienda {
+  transition: all 2s; }
+
+.fotosOrden img:hover {
+  width: 330px;
+  padding: 2px; }
+
+.contacto {
+  margin-top: 100px;
+  margin-bottom: 150px; }
+
+footer {
+  display: flex;
+  background-image: linear-gradient(90deg, black 0%, black 0%, #322009 23%, #704715 60%, #b37121 100%, #ddbe40 100%);
+  border: black hidden;
+  border-radius: 10px;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  margin: 5px;
+  padding: 10px;
+  grid-area: footer; }
+
+.copyright {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  padding: 60px; }
+
+.iconoRedes {
+  margin: 3px;
+  padding: 40px; }
+
+.carousel img {
+  border-radius: 15px; }
