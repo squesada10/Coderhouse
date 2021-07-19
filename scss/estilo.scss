@@ -15,16 +15,6 @@
  "seccionNueva seccionNueva seccionNueva fotoIndex2"
  "footer footer footer footer"; }
 
-@media screen and (max-width: 320px) {
-  .contenedorPadre {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "header header header header"
- "fotoIndex fotoIndex fotoIndex fotoIndex"
- "seccionNueva seccionNueva seccionNueva seccionNueva"
- "fotoIndex2 fotoIndex2 fotoIndex2 fotoIndex2"
- "footer footer footer footer"; } }
-
 .logo img {
   border-radius: 100%;
   width: 90px;
@@ -194,11 +184,6 @@ a {
   border-radius: 15px;
   grid-area: equipo; }
 
-@media screen and (max-width: 768px) {
-  .contNosotros {
-    grid-template-areas: "equipo"
- "texto"; } }
-
 .seccionTienda {
   margin: 50px;
   padding: 20px;
@@ -249,3 +234,25 @@ footer {
 
 .carousel img {
   border-radius: 15px; }
+
+
+
+
+
+  @media screen and (max-width: 320px) {
+    .contenedorPadre {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "header header header header"
+   "fotoIndex fotoIndex fotoIndex fotoIndex"
+   "seccionNueva seccionNueva seccionNueva seccionNueva"
+   "fotoIndex2 fotoIndex2 fotoIndex2 fotoIndex2"
+   "footer footer footer footer"; } }
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .contNosotros {
+      grid-template-areas: "equipo"
+    "texto"; } }
