@@ -98,8 +98,10 @@ body {
 
 h1 {
   color: white;
+  padding: 10px;
+  margin: 10px;
   font-family: 'Raleway', sans-serif; }
-
+/*
 h2 {
   color: #faf398;
   font-family: monospace;
@@ -107,7 +109,7 @@ h2 {
   text-decoration: underline;
   margin: 20px;
   padding: 20px; }
-
+*/
 h3 {
   color: white;
   font-family: 'Amatic SC', cursive;
