@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header menu menu menu" "fotoIndex fotoIndex fotoIndex fotoIndex" "seccionNueva seccionNueva seccionNueva fotoIndex2" "footer footer footer footer"; }
+  grid-template-areas: "header menu menu menu" "fotoIndex fotoIndex fotoIndex fotoIndex" "seccionNueva seccionNueva seccionNueva fotoIndex2" "footer footer footer footer"; }
 
 .logo img {
   border-radius: 100%;
@@ -57,8 +57,8 @@ ul li:hover {
   background: linear-gradient(90deg, #d7b33c 0%, black 0%, #322009 23%, #704715 60%, #b37121 100%, #ddbe40 100%); }
 
 .fotoIndex {
-  margin-top: 5px;
-  width: 100%;
+  width: 70%;
+  margin-left: 15%;
   grid-area: fotoIndex; }
 
 .fotoIndex img {
@@ -98,10 +98,9 @@ body {
 
 h1 {
   color: white;
-  padding: 10px;
-  margin: 10px;
-  font-family: 'Raleway', sans-serif; }
-/*
+  font-family: 'Raleway', sans-serif;
+  padding: 10px; }
+
 h2 {
   color: #faf398;
   font-family: monospace;
@@ -109,7 +108,7 @@ h2 {
   text-decoration: underline;
   margin: 20px;
   padding: 20px; }
-*/
+
 h3 {
   color: white;
   font-family: 'Amatic SC', cursive;
@@ -160,7 +159,7 @@ a {
   border: 5px solid #b47f1cd8;
   border-radius: 10px;
   color: white;
-  margin: 10px 10px 5px 10px;
+  margin: 0px 10px 5px 10px;
   padding: 30px;
   text-align: justify;
   letter-spacing: 1px;
@@ -171,7 +170,7 @@ a {
   display: grid;
   grid-template-columns: repeat 3, 1fr;
   grid-template-rows: repeat 2, 1fr;
-  grid-template-areas: "equipo texto" "equipo texto";
+  grid-template-areas: "equipo texto" "equipo texto";
   gap: 10px;
   justify-items: center;
   align-items: center;
@@ -196,13 +195,6 @@ a {
   width: 320px;
   margin: 10px;
   border-radius: 10px; }
-
-.fotitotienda {
-  transition: all 2s; }
-
-.fotosOrden img:hover {
-  width: 330px;
-  padding: 2px; }
 
 .contacto {
   margin-top: 100px;
@@ -237,8 +229,8 @@ footer {
   .contenedorPadre {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "header header header header" "fotoIndex fotoIndex fotoIndex fotoIndex" "seccionNueva seccionNueva seccionNueva seccionNueva" "fotoIndex2 fotoIndex2 fotoIndex2 fotoIndex2" "footer footer footer footer"; } }
+    grid-template-areas: "header header header header" "fotoIndex fotoIndex fotoIndex fotoIndex" "seccionNueva seccionNueva seccionNueva seccionNueva" "fotoIndex2 fotoIndex2 fotoIndex2 fotoIndex2" "footer footer footer footer"; } }
 
 @media screen and (max-width: 768px) {
   .contNosotros {
-    grid-template-areas: "equipo" "texto"; } }
+    grid-template-areas: "equipo" "texto"; } }

@@ -60,8 +60,9 @@ ul li:hover {
   background: linear-gradient(90deg, #d7b33c 0%, black 0%, #322009 23%, #704715 60%, #b37121 100%, #ddbe40 100%); }
 
 .fotoIndex {
-  margin-top: 5px;
-  width: 100%;
+
+  width: 70%;
+  margin-left: 15%;
   grid-area: fotoIndex; }
 
 .fotoIndex img {
@@ -101,7 +102,8 @@ body {
 
 h1 {
   color: white;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  padding: 10px; }
 
 h2 {
   color: #faf398;
@@ -161,7 +163,7 @@ a {
   border: 5px solid #b47f1cd8;
   border-radius: 10px;
   color: white;
-  margin: 10px 10px 5px 10px;
+  margin: 0px 10px 5px 10px;
   padding: 30px;
   text-align: justify;
   letter-spacing: 1px;
@@ -200,11 +202,10 @@ a {
   border-radius: 10px; }
 
 .fotitotienda {
-  transition: all 2s; }
+  }
 
 .fotosOrden img:hover {
-  width: 330px;
-  padding: 2px; }
+   }
 
 .contacto {
   margin-top: 100px;
